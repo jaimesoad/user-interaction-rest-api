@@ -1,11 +1,10 @@
 import {Request, Response} from "express";
-import {GenPasswordSalt, Utils} from "../utils/utils";
+import {CreateNewToken, GenPasswordSalt, Utils} from "../utils/utils";
 import db from "../data/data";
 import {ResultSetHeader} from "mysql2";
 import {Authed, User} from "../models/models";
-import jwt from "jsonwebtoken";
-import {ACCESS_KEY} from "../config";
 
+// Creates a new user only if the username and passwords are each unique.
 export async function signup(req: Request, res: Response) {
     const username: string = req.body.username
     const email: string = req.body.email
@@ -39,8 +38,7 @@ export async function signup(req: Request, res: Response) {
 
     if (response.affectedRows === 0) res.send("An error ocurred.")
 
-    const user: User = {name: username}
-    const accessToken = jwt.sign(user, ACCESS_KEY)
+    const accessToken = CreateNewToken(username)
 
     res.json({"accessToken": accessToken})
 }

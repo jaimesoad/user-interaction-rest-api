@@ -3,6 +3,7 @@ import db from "../data/data"
 import {AuthUser, CreateNewToken} from "../utils/utils";
 import {Authed} from "../models/models";
 
+// Logs in with username and password only if the given user exist in the database.
 export async function login(req: Request, res: Response) {
     const username: string = req.body.username
     const password: string = req.body.password

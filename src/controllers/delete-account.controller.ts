@@ -3,6 +3,7 @@ import {AuthUser} from "../utils/utils";
 import db from "../data/data";
 import {ResultSetHeader} from "mysql2";
 
+// Deletes the current user's account if the password provided is correct.
 export async function deleteAccount(req: Request, res: Response) {
     const username = req.user.name
     const password: string = req.body.password

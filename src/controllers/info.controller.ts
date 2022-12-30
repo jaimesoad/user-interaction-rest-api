@@ -4,6 +4,7 @@ import {Authed, UserInfo} from "../models/models";
 import {ResultSetHeader} from "mysql2";
 import {CreateNewToken} from "../utils/utils";
 
+// Show the non-critical info of the current user: name, surname, username, age, and email.
 export async function GetUserInfo(req: Request, res: Response) {
     const user = req.user.name
 
@@ -12,6 +13,7 @@ export async function GetUserInfo(req: Request, res: Response) {
     res.json(row)
 }
 
+// Modifies the given values of the current user and displays them back to the user.
 export async function PatchUserInfo(req: Request, res: Response) {
     const {Name, Surname, Username, Email, Age} = req.body
     const user = req.user.name

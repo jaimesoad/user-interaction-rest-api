@@ -1,3 +1,7 @@
+/*
+ * Main file, this is where the server an all functionality happens.
+ * */
+
 import express from "express"
 import {PORT} from "./config";
 import loginRoutes from "./routes/login.routes";

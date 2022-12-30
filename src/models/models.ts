@@ -1,3 +1,7 @@
+/* These interfaces are used to give Typescript a more certain idea
+ * to what's happening in the code.
+ * */
+
 export interface Authed {
     authed: number
 }

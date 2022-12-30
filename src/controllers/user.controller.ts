@@ -2,6 +2,7 @@ import {Request, Response} from "express";
 import db from "../data/data";
 import {Authed} from "../models/models";
 
+// Looks in the database for a given user and shows them back. if not, sends an error of user not found.
 export async function FindUser(req: Request, res: Response) {
     const user = req.params.username
 
