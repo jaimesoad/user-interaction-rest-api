@@ -25,18 +25,23 @@ export async function signup(req: Request, res: Response) {
 
     const passwd = Utils(password + salt)
 
-    const [response] = await db.query('call NuevoUsuario(?, ?, ?, ?, ?, ?, ?)',
-        [
-            name,
-            surname,
-            username,
-            passwd,
-            age,
-            email,
-            salt
-        ]) as ResultSetHeader[]
+    try {
+        const [response] = await db.query('call NuevoUsuario(?, ?, ?, ?, ?, ?, ?)',
+            [
+                name,
+                surname,
+                username,
+                passwd,
+                age,
+                email,
+                salt
+            ]) as ResultSetHeader[]
 
-    if (response.affectedRows === 0) res.send("An error ocurred.")
+        if (response.affectedRows === 0) return res.send("An error ocurred.")
+
+    }catch{
+        return res.send("All fields must be filled.")
+    }
 
     const accessToken = CreateNewToken(username)
 

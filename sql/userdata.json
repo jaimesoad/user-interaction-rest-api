@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Jaime",
+    "surname": "Acosta",
+    "username": "jaimesoad",
+    "password": "SuperHardPassword",
+    "email": "jaime@gmail.com",
+    "age": 21
+  },
+  {
+    "name": "Juan",
+    "surname": "Perez",
+    "username": "juanpers",
+    "password": "passwordjuanperez-1234As@",
+    "email": "juanp12@gmail.com"
+  },
+  {
+    "name": "Miguel",
+    "surname": "Hernandez",
+    "username": "hermigue",
+    "password": "djkdlwdhi3dj",
+    "email": "hermigue@gmail.com",
+    "age": 27
+  },
+  {
+    "name": "Lola",
+    "surname": "Fossati",
+    "username": "papita",
+    "password": "ScoobyDoo69",
+    "email": "lola@gmail.com",
+    "age": 23
+  },
+  {
+    "name": "Abraham",
+    "surname": "Miller",
+    "username": "mrmiller",
+    "password": "MrMillerPassword",
+    "email": "Amiller@gmail.com",
+    "age": 36
+  },
+  {
+    "name": "Diego",
+    "surname": "Maradona",
+    "username": "dieguito",
+    "password": "telojuropordieguitomaradona",
+    "email": "maradona@gmail.com"
+  },
+  {
+    "name": "Michael",
+    "surname": "Reeves",
+    "username": "reeeeves",
+    "password": "mybirthdayPassword",
+    "email": "mcribs@gmail.com",
+    "age": 25
+  },
+  {
+    "name": "Julio",
+    "surname": "Salazar",
+    "username": "bigmacman",
+    "password": "yourmomismypassword",
+    "email": "juliosz@gmail.com",
+    "age": 32
+  },
+  {
+    "name": "William",
+    "surname": "Osman",
+    "username": "william",
+    "password": "openinglishdotcom63",
+    "email": "owo23@gmail.com"
+  },
+  {
+    "name": "Pablo",
+    "surname": "Altozano",
+    "username": "pololo",
+    "password": "wfvnivefwvu",
+    "email": "pabloa12@gmail.com",
+    "age": 18
+  }
+]
